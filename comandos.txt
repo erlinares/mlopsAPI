@@ -5,3 +5,17 @@ uvicorn app_1:app --reload
 uvicorn app_2:app --reload
 
 uvicorn app_3:app --reload
+
+-----   Git push
+
+git init 
+
+git remote add origin https://github.com/erlinares/mlopsAPI.git
+
+git branch -M main
+
+git add .
+
+git commit -m "test"
+
+git push -u origin main

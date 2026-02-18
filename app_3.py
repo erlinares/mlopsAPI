@@ -15,8 +15,10 @@ import pytz
 import os
 
 # Configurar la base de datos de railway
-SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:fgGXWQcywsjNjaafnekIMyXplompsfJC@shuttle.proxy.rlwy.net:43623/railway"
-#SQLALCHEMY_DATABASE_URL = os.environ["SQLALCHEMY_DATABASE_URL"]
+#SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:fgGXWQcywsjNjaafnekIMyXplompsfJC@shuttle.proxy.rlwy.net:43623/railway"
+
+#esto esta colocada a nivel de variable de entorno en Railway, pero si quieres probarlo localmente, puedes descomentar la línea de arriba y comentar la línea de abajo
+SQLALCHEMY_DATABASE_URL = os.environ["SQLALCHEMY_DATABASE_URL"]
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 metadata = MetaData()
  
